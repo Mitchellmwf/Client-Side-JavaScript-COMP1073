@@ -1,5 +1,5 @@
 // Declare and initialize variables
-const btn = document.querySelector('button');
+//const btn = document.querySelector('button');
 
 // Functions
 function random(number) {
@@ -25,7 +25,7 @@ btn.onclick = bgChange;
 
 /* STEP 4a: addEventListener() and removeEventListener()
 Let's rewrite the above code with these two methods - comment out the A, B, C buttons and restore the original button - then comment out the above code */
-
+const buttons = document.querySelectorAll('button');
 
 /* STEP 4b: We can also put the entire bgChange() function inside an anonymous function, if we'd like: */
 
