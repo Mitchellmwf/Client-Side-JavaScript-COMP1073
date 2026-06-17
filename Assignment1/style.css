@@ -7,14 +7,15 @@ body{
     margin: auto;
     justify-content: center;
 }
-#story{
+#storyText{
     display: block;
     background-color: #eae8e8;
     border: solid .3em #25252534;
+    justify-self: start;
     box-sizing: content-box;
     border-radius: 7px;
     margin: auto;
-    padding: 0.2em 0.7em;
+    padding: 0.2em 1.2em;
 }
 .sectionText{
     text-align: left;
