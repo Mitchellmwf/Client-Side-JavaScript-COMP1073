@@ -1,0 +1,51 @@
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+body{
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+#story{
+    display: block;
+    background-color: #eae8e8;
+    border: solid .3em #25252534;
+    box-sizing: content-box;
+    border-radius: 7px;
+    margin: auto;
+    padding: 0.2em 0.7em;
+}
+.sectionText{
+    text-align: left;
+}
+
+#storySection{
+    align-items: center;
+}
+
+div button{
+    justify-self: right;
+}
+#storySection button{
+    width: 80%;
+    margin: auto 10%;
+}
+
+button{
+    background-color: #8ac5c9; 
+    border: solid .3em #5a9fa4;
+    border-radius: 12px;
+    padding: 0.5em .7em;
+    width: 10em;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: .3em 1em;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #5a9fa4;
+    color: white;
+}
