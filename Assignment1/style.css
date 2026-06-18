@@ -2,10 +2,21 @@ div{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.secTextDiv p{
+    margin: 0em .7em
+}
 body{
     width: 50%;
     margin: auto;
     justify-content: center;
+}
+.secTextDiv p:nth-child(2){
+    display: inline-block;
+    background-color: #eae8e8;
+    border: solid .3em #3f3f3f34;
+    border-radius: 7px;
+    padding: 0.2em 1.2em;
+    justify-self: start;
 }
 #storyText{
     display: block;
@@ -31,6 +42,15 @@ div button{
 #storySection button{
     width: 80%;
     margin: auto 10%;
+}
+.secTextDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h2{
+    margin-top: 12em;
+    font-family: arial, sans-serif;
 }
 
 button{

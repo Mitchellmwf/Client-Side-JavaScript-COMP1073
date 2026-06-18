@@ -18,6 +18,22 @@ const adjText = document.getElementById('adjectiveText');
 const objText = document.getElementById('objectText');
 const locText = document.getElementById('locationText');
 
+// Prev fields
+const prevSub = document.getElementById('subjectPrev');
+const prevAdv = document.getElementById('adverbPrev');
+const prevVerb = document.getElementById('verbPrev');
+const prevAdj = document.getElementById('adjectivePrev');
+const prevObj = document.getElementById('objectPrev');
+const prevLoc = document.getElementById('locationPrev');
+
+// Next fields
+const nextSub = document.getElementById('subjectNext');
+const nextAdv = document.getElementById('adverbNext');
+const nextVerb = document.getElementById('verbNext');
+const nextAdj = document.getElementById('adjectiveNext');
+const nextObj = document.getElementById('objectNext');
+const nextLoc = document.getElementById('locationNext');
+
 // Word Lists
 const subList = ['The fox', 'Ryan Reynolds', 'Bugs Bunny', 'My friend', 'The teacher'];
 const advList = ['quickly', 'lazily', 'somberly', 'hesitantly', 'angrily'];
@@ -27,18 +43,21 @@ const objList = ['the ball', 'the tree', 'the receptionist', 'the house', 'the b
 const locList = ['on the roof', 'in the park', 'in the backyard', 'at school', 'in the kitchen'];
 
 // Function to cycle to the next item in the list and update the text
-function cycleNext(element, list) {
+function cycleNext(element, list, prev, next) {
     const num = (list.indexOf(element.textContent) + 1) % list.length;
     element.textContent = list[num];
+    // Update the previous and next fields
+    prev.textContent = list[(num - 1 + list.length) % list.length];
+    next.textContent = '=>      ' + list[(num + 1) % list.length];
 }
 
 // Event listeners
-subBtn.addEventListener('click', () => cycleNext(subText, subList));
-advBtn.addEventListener('click', () => cycleNext(advText, advList));
-verbBtn.addEventListener('click', () => cycleNext(verbText, verbList));
-adjBtn.addEventListener('click', () => cycleNext(adjText, adjList));
-objBtn.addEventListener('click', () => cycleNext(objText, objList));
-locBtn.addEventListener('click', () => cycleNext(locText, locList));
+subBtn.addEventListener('click', () => cycleNext(subText, subList, prevSub, nextSub));
+advBtn.addEventListener('click', () => cycleNext(advText, advList, prevAdv, nextAdv));
+verbBtn.addEventListener('click', () => cycleNext(verbText, verbList, prevVerb, nextVerb));
+adjBtn.addEventListener('click', () => cycleNext(adjText, adjList, prevAdj, nextAdj));
+objBtn.addEventListener('click', () => cycleNext(objText, objList, prevObj, nextObj));
+locBtn.addEventListener('click', () => cycleNext(locText, locList, prevLoc, nextLoc));
 
 // Event listener for the story button to create the story
 storyBtn.addEventListener('click', () => {
