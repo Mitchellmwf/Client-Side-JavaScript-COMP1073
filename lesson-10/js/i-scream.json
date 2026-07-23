@@ -3,7 +3,7 @@
   "headOffice" : "South Pole, Antarctica",
   "established" : 2001,
   "active" : true,
-  "topFlavours" : [
+  "topFlavors" : [
     {
       "name" : "Monstrous Mint",
       "calories" : 400,
