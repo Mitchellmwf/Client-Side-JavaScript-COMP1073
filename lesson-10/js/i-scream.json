@@ -46,7 +46,7 @@
         "chocolate chips",
         "vanilla extract"
       ],
-      "image" : "https://Mitchellmwf.github.io/Client-Side-JavaScript-COMP1073/lesson-10/images/ice-cream-xtra1.svg"
+      "image" : "https://Mitchellmwf.github.io/Client-Side-JavaScript-COMP1073/lesson-10/images/ice-cream-xtra2.svg"
     },
     {
       "name" : "Shrek's Easter Swamp",
@@ -57,7 +57,7 @@
         "kiwi chunks",
         "lime juice"
       ],
-      "image" : "https://Mitchellmwf.github.io/Client-Side-JavaScript-COMP1073/lesson-10/images/ice-cream-xtra2.svg"
+      "image" : "https://Mitchellmwf.github.io/Client-Side-JavaScript-COMP1073/lesson-10/images/ice-cream-xtra1.svg"
     }
   ]
 }
