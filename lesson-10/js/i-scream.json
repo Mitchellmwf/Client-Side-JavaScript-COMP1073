@@ -13,7 +13,7 @@
         "dark chocolate chips",
         "vanilla extract"
       ],
-      "image" : "chocolate-mint.svg"
+      "image" : "https://Mitchellmwf.github.io/Client-Side-JavaScript-COMP1073/lesson-10chocolate-mint.svg"
     },
     {
       "name" : "Perfect Peach Mango",
@@ -24,7 +24,40 @@
         "mango chunks",
         "clover honey"
       ],
-      "image" : "peach-mango.svg"
+      "image" : "https://Mitchellmwf.github.io/Client-Side-JavaScript-COMP1073/lesson-10peach-mango.svg"
+    },
+    {
+      "name" : "Chocolate Dipped Strawberry",
+      "calories" : 249,
+      "type" : "ice cream",
+      "ingredients" : [
+        "strawberries",
+        "lemon juice",
+        "sugar"
+      ],
+      "image" : "https://Mitchellmwf.github.io/Client-Side-JavaScript-COMP1073/lesson-10peach-mango.svg"
+    },
+    {
+      "name" : "Chipped Chocolate Cookie Dough",
+      "calories" : 590,
+      "type" : "ice cream",
+      "ingredients" : [
+        "cookie dough",
+        "chocolate chips",
+        "vanilla extract"
+      ],
+      "image" : "https://Mitchellmwf.github.io/Client-Side-JavaScript-COMP1073/lesson-10/images/ice-cream0-xtra1.svg"
+    },
+    {
+      "name" : "Shrek's Easter Swamp",
+      "calories" : 350,
+      "type" : "sorbet",
+      "ingredients" : [
+        "green apple purée",
+        "kiwi chunks",
+        "lime juice"
+      ],
+      "image" : "https://Mitchellmwf.github.io/Client-Side-JavaScript-COMP1073/lesson-10/images/ice-cream0-xtra2.svg"
     }
   ]
 }
